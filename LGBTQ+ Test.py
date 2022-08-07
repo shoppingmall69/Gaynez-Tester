@@ -1,6 +1,5 @@
-#Wagwan,
-#have you ever felt like the online sex tests aren't accurate, and you need something more accurate?
-#If yes, then this is for you.
+# Wagwan,
+# Have you ever felt like the online LGBTQ+ tests aren't accurate, and you need something more accurate? If yes, then this is for you.
 
 import os
 
@@ -8,13 +7,14 @@ from pystyle import *
 from time import sleep as stfu
 
 banner = """
-███████╗███████╗██╗  ██╗    ████████╗███████╗███████╗████████╗
-██╔════╝██╔════╝╚██╗██╔╝    ╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
-███████╗█████╗   ╚███╔╝        ██║   █████╗  ███████╗   ██║   
-╚════██║██╔══╝   ██╔██╗        ██║   ██╔══╝  ╚════██║   ██║   
-███████║███████╗██╔╝ ██╗       ██║   ███████╗███████║   ██║   
-╚══════╝╚══════╝╚═╝  ╚═╝       ╚═╝   ╚══════╝╚══════╝   ╚═╝   
-A simple sex test to find out if you're Gay/Lesbian
+██╗      ██████╗ ██████╗ ████████╗ ██████╗     ████████╗███████╗███████╗████████╗
+██║     ██╔════╝ ██╔══██╗╚══██╔══╝██╔═══██╗    ╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝
+██║     ██║  ███╗██████╔╝   ██║   ██║   ██║       ██║   █████╗  ███████╗   ██║   
+██║     ██║   ██║██╔══██╗   ██║   ██║▄▄ ██║       ██║   ██╔══╝  ╚════██║   ██║   
+███████╗╚██████╔╝██████╔╝   ██║   ╚██████╔╝       ██║   ███████╗███████║   ██║   
+╚══════╝ ╚═════╝ ╚═════╝    ╚═╝    ╚══▀▀═╝        ╚═╝   ╚══════╝╚══════╝   ╚═╝   
+                                                                                  
+A simple LGBTQ+ test to find out if you're Gay/Lesbian
 Originally coded by github/shoppingmall69 revamped by Bloody\n
 """
 
