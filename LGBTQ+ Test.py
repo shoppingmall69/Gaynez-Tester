@@ -38,7 +38,7 @@ def pause():
 def male():
     set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Attraction")
     print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(banner)))
-    male_attraction = Write.Input('Are you attracted to females, write F for female: ', Colors.red_to_yellow, interval=0.008)
+    male_attraction = Write.Input('Are you attracted to females, write F for female or M for male: ', Colors.red_to_yellow, interval=0.008)
     cls()
     set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Calculating")
     print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(calculating)))
@@ -60,7 +60,7 @@ def male():
 def female():
     set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Atrraction")
     print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(banner)))
-    female_attraction = Write.Input('Are you attracted to males, write M for male: ', Colors.red_to_yellow, interval=0.008)
+    female_attraction = Write.Input('Are you attracted to males, write M for male or F for female: ', Colors.red_to_yellow, interval=0.008)
     cls()
     set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Calculating")
     print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(calculating)))
