@@ -1,6 +1,6 @@
-#Wagwan,
-#have you ever felt like the online sex tests aren't accurate, and you need something more accurate?
-#If yes, then this is for you.
+# Wagwan,
+# Have you ever felt like the online sex tests aren't accurate, and you need something more accurate?
+# If yes, then this is for you.
 
 import os
 
@@ -14,7 +14,7 @@ banner = """
 ██║     ██║  ███╗██████╔╝   ██║   ██║   ██║       ██║   █████╗  ███████╗   ██║   
 ██║     ██║   ██║██╔══██╗   ██║   ██║▄▄ ██║       ██║   ██╔══╝  ╚════██║   ██║   
 ███████╗╚██████╔╝██████╔╝   ██║   ╚██████╔╝       ██║   ███████╗███████║   ██║   
-╚══════╝ ╚═════╝ ╚═════╝    ╚═╝    ╚══▀▀═╝        ╚═╝   ╚══════╝╚══════╝   ╚═╝   
+╚══════╝ ╚═════╝ ╚═════╝    ╚═╝    ╚══▀▀═╝        ╚═╝   ╚══════╝╚══════╝   ╚═╝v1.1
                                                                                   
 A simple LGBTQ+ test to find out if you're Gay/Lesbian
 Originally retardedly coded by github/shoppingmall69 in 8 lines, revamped by Bloody\n
@@ -35,10 +35,18 @@ def cls():
 def pause():
     os.system('pause >nul')
 
+def pius():
+    cls()
+    print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(banner)))
+    set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Breh")
+    Write.Print("Pius. You are the embodiment of gayness.", Colors.green_to_white, interval=0.008)
+    pause()
+
 def male():
     set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Attraction")
     print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(banner)))
-    male_attraction = Write.Input('Are you attracted to females, write F for female or M for male: ', Colors.red_to_yellow, interval=0.008)
+    Write.Print("NOTE: Please put all answers in CAPS , it's case sensitive.\n", Colors.red_to_yellow, interval=0)
+    male_attraction = Write.Input('Are you attracted to females? Write F for female or M for male: ', Colors.red_to_yellow, interval=0.008)
     cls()
     set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Calculating")
     print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(calculating)))
@@ -60,7 +68,8 @@ def male():
 def female():
     set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Atrraction")
     print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(banner)))
-    female_attraction = Write.Input('Are you attracted to males, write M for male or F for female: ', Colors.red_to_yellow, interval=0.008)
+    Write.Print("NOTE: Please put all answers in CAPS , it's case sensitive.\n", Colors.red_to_yellow, interval=0)
+    female_attraction = Write.Input('Are you attracted to males? Write M for male or F for female: ', Colors.red_to_yellow, interval=0.008)
     cls()
     set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Calculating")
     print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(calculating)))
@@ -79,14 +88,26 @@ def female():
         Write.Print("Either you provided an incorrect answer or you're Lesbian.", Colors.green_to_white, interval=0.008)
         pause()
 
+def ask_gender():
+    cls()
+    print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(banner)))
+    set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Gender")
+    Write.Print("NOTE: Please put all answers in CAPS , it's case sensitive.\n", Colors.red_to_yellow, interval=0)
+    gender = Write.Input("What is your gender?. Write M for male or F for female: ", Colors.red_to_yellow, interval=0.008)
+    cls()
+    if gender == 'M':
+        male()
+    else:
+        female()
+
 cls()
-set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Gender")
+set_title("LGBTQ+ Test | By: shoppingmall69 | Revamped By: Bloody | Name")
 print(Colorate.Horizontal(Colors.purple_to_blue, Center.XCenter(banner)))
-gender = Write.Input("What is your gender, write M for male or F for female: ", Colors.red_to_yellow, interval=0.008)
-cls()
+ask_name = Write.Input("What is your name?: ", Colors.red_to_yellow, interval=0.008)
 
 
-if gender == 'M':
-    male()
+
+if ask_name == 'Pius':
+    pius()
 else:
-    female()
+    ask_gender()
